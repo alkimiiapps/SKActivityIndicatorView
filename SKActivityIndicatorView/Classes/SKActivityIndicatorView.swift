@@ -113,6 +113,10 @@ public class SKActivityIndicator {
             activityIndicatorView!.layer.cornerRadius = 8
             activityIndicatorView!.layer.masksToBounds = true
             activityIndicatorView!.isTranslucent = true
+            activityIndicatorView!.setBackgroundImage(UIImage(),
+                                                      forToolbarPosition: .any,
+                                                      barMetrics: .default)
+            activityIndicatorView!.setShadowImage(UIImage(), forToolbarPosition: .any)
             registerForKeyboardNotificatoins()
         }
 
